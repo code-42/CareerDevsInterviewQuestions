@@ -78,7 +78,7 @@ This youtube video explains it well.  https://www.youtube.com/watch?v=bum_19loj9
 http://delivery.acm.org/10.1145/1290000/1283927/a1972-dijkstra.pdf?ip=68.0.213.32&id=1283927&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1530763760_2fe16c6dd019b5fc00fe92f4fc664579
 Your answer:
 > An error occurred while processing your request.
-Reference #50.cd58db17.1531096753.1db6f6cb
+Reference #50.cd58db17.1531096753.1db6f6cb  
 The link does not work
 
 11. Watch some of the following. 
@@ -96,7 +96,7 @@ Your answer:
 
 
 12. List two resources for learning about/exploring algorithms (url) ?
-> A. https://brilliant.org/courses/computer-science-algorithms/
+> A. https://brilliant.org/courses/computer-science-algorithms/  
 B. https://www.geeksforgeeks.org/fundamentals-of-algorithms/
 
 13. List a url to an algorithm repository along with a snippet of code. 
@@ -119,7 +119,7 @@ If the argument modulo the counter is not equal zero, then it is a prime number,
 
 14. List a second url to an algorithm repository along with a snippet of code.  
 A (url1). 
->https://www.geeksforgeeks.org/biginteger-class-in-java/
+> https://www.geeksforgeeks.org/biginteger-class-in-java/
 
 B. Code snippet:
 
@@ -144,25 +144,51 @@ C. Describe the algorithmic context of the code snippet pasted above
 
 1. What is a design pattern? Be descriptive (6 [six] or more sentences).
 Your answer:
-> 
+> In software engineering, a design pattern is a general, reusable solution to a commonly occurring problem in software design.  
+It is a description or a template for how to solve a problem that can be used in many different situations.
+Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.
+Design patterns may be viewed as a structured approach to computer programming.
+They are somewhere between a programming paradigm and an algorithm.
 
 2. What is the purpose of  design pattern? Be descriptive (4 or more sentences).
-Your answer:
+Your answer:    
+> Design patterns can speed up the development process by providing tested, proven development paradigms.  
+Freshly written code can have hidden subtle issues that take time to be detected.
+Reusing design patterns can help to prevent such subtle issues.
+It also improves code readability for coders and architects who are familiar with the patterns.
+
 
 3. How does design pattern mastery make one a better computer scientist and software engineer?  Be descriptive (4 or more sentences).
-Your answer:
+Your answer:  
+> Design patterns make it easier to reuse successful designs and architectures.  
+Expressing proven techniques as design patterns makes them more accessible to developers of new systems.  
+Design patterns help you choose design alternatives that make a system reusable and avoid alternatives that compromise reusability.
+
 
 4. How do design patterns relate to OOP?
-Your answer:
+Your answer:  
+> Design patterns help you identify less-obvious abstractions and the objects that can capture them.  
+Objects that represent a process or algorithm don't occur in nature, yet they are a crucial part of flexible design.
+The Strategy pattern describes how to implement interchangable families of algorithms.  
+The State pattern represents each state of an entitiy as an object.  
+These objects are seldom found during analysis or even in the early stages of design; they are discovered later in the course of making a design more flexible and reusable.
 
 5. Describe the MVC design pattern and include a use case.  Be descriptive (4 or more sentences).
-Your answer:
+Your answer:  
+> MVC is a triad of three kinds of  objects:  
+Model is the application object.  
+View is the screen presentation.  
+Controller defines the way the user interface reacts to user input.
+
 
 6. Name and describe another design pattern and include a use case.  Be descriptive (4 or more sentences).
 Your answer:
+> Factory Method pattern defines an interface for creating an object, but lets the subclasses decide which class to instantiate.
 
 7. Name and describe another design pattern and include a use case.  Be descriptive (4 or more sentences).
-Your answer:
+Your answer:  
+> Observer pattern defins a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.  
+Think ajax in JavaScript.
 
 Object Oriented Programming
 
