@@ -194,23 +194,36 @@ Object Oriented Programming
 
 1. What is a Object Oriented Programming? Be descriptive (6 [six] or more sentences).
 Your answer:
+> Object Oriented Programming is a way of thinking about problem solving and a method of software organization and construction. OOP is preoccupied with the manipulation of software objects.
 
 2. What are the goals of OOP?
+> Data Abstraction, Encapsulation, Inheritance and Polymorphism 
+
+
 3. Define Encapsulation
-Your answer:
+Your answer:  
+> Encapsulation hides data and functions that manipulate the data from outside interference and misuse.
 
 Paste a commented code snippet example below: 
 
 4. Define Abstraction 
-Your answer:
+Your answer:  
+> Abstraction associates an underlying data type with a set of operations that may be performed on the data type.  
+Abstraction allows you to show only "relevant" data and "hide" unnecessary details of an object from the user and from other classes.
+Data abstraction separates the operations that may be performed on the underlying data, and the internal representation of the data.  
+If the internal representation of the data gets changed, the software that uses the data remains unaffected.
 
 Paste a commented code snippet example below: 
 
 5. Define Inheritance
-Your answer:
+Your answer:  
+> Inheritance allows programmers to create classes with properties and functionalities that are based on existing classes, and to specify a new implementation while maintaining the same behaviors, to reuse code and to extend original software via public classes and interfaces.
+
 Paste a commented code snippet example below: 
+
 6. Define Polymorphism
-Your answer:
+Your answer:  
+Polymorphism is the provision of a single interface, that can be applied to arguments of different types, and that behave differently depending on the type to which they are applied.
 
 Paste a commented code snippet example below: 
 
@@ -219,22 +232,34 @@ Paste a commented code snippet example below:
 8. What is the Diamond Problem as it relates to:
 A. C#
 B. Java
-> A class cannot inherit from two parents because if there was a method with the same name, the compiler would not know which one to use.
+> A class cannot inherit from two parents because if there was a method or fields with the same name, the compiler would not know which one to use.
 
 9. What is the difference between polymorphism and inheritance?
-Your answer:
+Your answer:  
+> Inheritance creates a copy of a class, polymorphism causes the class to behave differently depending on the type of object that was instantiated.
+
 10. What is Association?
-Your answer:
+Your answer:  
+Association defines a relationship between classes of objects that allows one object instance to cause another to perform an actin on its behalf.
+
 11. What is Aggregation?
-Your answer:
+Your answer:   
+> Aggregation is a one-way association between two classes, that represents a HAS-A relationship.  
+
 12. What is Composition?
-Your answer:
+Your answer:  
+> Composition is a way to combine simple objects or data types into more complex structures.
+
+
 13. What are constructors and what are destructors?
-Your answer:
+Your answer:  
+> Constructors prepare a new object for use, often accepting arguments to set member variables.
 
 14. What are constructors and what are destructors?
 Your answer:
-15. What are access modifiers?
+15. What are access modifiers?  
+> Access modifiers determine whether other classes can use a particular field or invoke a particular method.  
+There are public, private, protected and package-private(no explicit modifier) that allow access to the class, subclass, package or world.
  
 
 .Net Questions
