@@ -22,14 +22,14 @@ Talk soon,
 
 Arnell
 
-Algorithms:
+# Algorithms:
 
 1. What is Big O notation?  Be descriptive (4 or more sentences).  What are its various permutations?
 Your answer:
-> Big-O notation is a way of expressing a function's space and time consumption.  
-How does a function’s performance scale as the input size grows to infinity.  
+> Big-O notation is a way of expressing a function's time and space  computational complexity as the input size grows to infinity.  
 To meaningfully compare algorithmic performance, we compare the asymptotic behavior of algorithms.  
-Big-O usually describes the upper bound on the growth rate of the function.  
+Big-O usually describes the upper bound on the growth rate of the function.  Big-Omega expresses the lower bounds.  
+Big-Theta expresses the average case.
 
 2. What are Divide and Conquer algorithms? Describe how they work. Can you give any common examples of the types of problems where this approach might be used?
 Your Answer:
@@ -175,8 +175,8 @@ Design patterns help you choose design alternatives that make a system reusable 
 Your answer:  
 > Design patterns help you identify less-obvious abstractions and the objects that can capture them.  
 Objects that represent a process or algorithm don't occur in nature, yet they are a crucial part of flexible design.  
-The Strategy pattern describes how to implement interchangable families of algorithms.  
-The State pattern represents each state of an entitiy as an object.  
+The Strategy pattern describes how to implement interchangeable families of algorithms.  
+The State pattern represents each state of an entity as an object.  
 These objects are seldom found during analysis or even in the early stages of design; they are discovered later in the course of making a design more flexible and reusable.  
 
 5. Describe the MVC design pattern and include a use case.  Be descriptive (4 or more sentences).
@@ -231,7 +231,7 @@ Paste a commented code snippet example below:
 
 6. Define Polymorphism
 Your answer:  
-Polymorphism is the provision of a single interface, that can be applied to arguments of different types, and that behave differently depending on the type to which they are applied.  
+> Polymorphism is the provision of a single interface, that can be applied to arguments of different types, and that behave differently depending on the type to which they are applied.  
 
 Paste a commented code snippet example below: 
 
@@ -248,7 +248,7 @@ Your answer:
 
 10. What is Association?
 Your answer:  
-Association defines a relationship between classes of objects that allows one object instance to cause another to perform an actin on its behalf.  
+> Association defines a relationship between classes of objects that allows one object instance to cause another to perform an action on its behalf.  
 
 11. What is Aggregation?
 Your answer:   
@@ -293,9 +293,9 @@ main is the method name
 5. What is singleton class and how can we make a class singleton?
 > A singleton class can only have one instance at a time.  
 If you try to instantiate a second singleton class, the new variable also points to the first instance.  
-To make a class singleton:  
-1. Make the constructor private access modifier.  
-2. Make a static method return type object of this singleton class.   
+> To make a class singleton:
+> 1. Make the constructor private access modifier.
+> 2. Make a static method return type object of this singleton class.
 
 6. What is the difference between equals() and == ?
 > equals() is a method of the String class that is used to compare tow strings and determine if they are equal.  
@@ -345,18 +345,19 @@ assert boolean extends final implements import instanceof native package strictf
 > No, Java does not support multiple inheritance because if a class had two parents and each had a method with the same name, the compiler would not know which one to use.
 
 18. Name AND DEFINE each of the methods of Object Class
-> java.lang.Object is the ultimate superclass of all objects.  
-Every class in Java is directly or indirectly derived from the Object class.  
-public Object()  
-getClass() : Returns the class object of “this” object and used to get actual runtime class of the object. It can also be used to get metadata of this class.    
-hashCode() : For every object, JVM generates a unique number which is hashcode. It returns distinct integers for distinct objects.   
-equals(Object obj) : Compares the given object to “this” object (the object on which the method is called). It gives a generic way to compare objects for equality.    
-protected Object clone() throws CloneNotSupportedException : It returns a new object that is exactly the same as this object.  
-toString() : toString() provides String representation of an Object and used to convert an object to String.   
-public final void notify()  
-public final void notifyAll()  
-public final void wait(long timeout) throws InterruptedException  
-public final void wait(long timeout, int nanoseconds) throws   InterruptedException  
-public final void wait() throws InterruptedException  
-protected void finalize() throws Throwable : This method is called just before an object is garbage collected. It is called by the Garbage Collector on an object when garbage collector determines that there are no more references to the object.
+> **java.lang.Object is the ultimate superclass of all objects.  
+Every class in Java is directly or indirectly derived from the Object class.**  
+**public Object() :** An object of type Object cannot access class’s methods, but you can get to that if you cast the object as type, for example: 
+System.out.println(((Vehicle)car.getSpeed());.
+**getClass() :** Returns the class object of “this” object and used to get actual runtime class of the object. It can also be used to get metadata of this class.    
+**hashCode() :** For every object, JVM generates a unique identifier which is hashcode. It returns distinct integers for distinct objects.   
+**equals(Object obj) :** Compares the given object to “this” object (the object on which the method is called). It gives a generic way to compare objects for equality.    
+**protected Object clone() throws CloneNotSupportedException :** It returns a new object that is exactly the same as this object.  
+**toString() :** provides String representation of an Object and used to convert an object to String.   
+**public final void notify() :** wakes up a single thread that is waiting on this object’s monitor. 
+**public final void notifyAll() :**  wakes up all threads waiting on this object’s monitor. 
+**public final void wait() throws InterruptedException :**  causes current thread to wait until another thread invokes notify() or notifyAll() for this object.
+**public final void wait(long timeout) throws InterruptedException :** causes current thread to wait until another thread invokes notify() or notifyAll() for this object, or a specified amount of time has elapsed. 
+**public final void wait(long timeout, int nanoseconds) throws   InterruptedException :**   causes current thread to wait until another thread invokes notify() or notifyAll() for this object, or a specified amount of time has elapsed, in nanoseconds.
+**protected void finalize() throws Throwable :** This method is called just before an object is garbage collected. It is called by the Garbage Collector on an object when garbage collector determines that there are no more references to the object.
 
