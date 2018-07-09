@@ -26,26 +26,32 @@ Algorithms:
 
 1. What is Big O notation?  Be descriptive (4 or more sentences).  What are its various permutations?
 Your answer:
-> Big-O notation is a way of expressing a function's space and time consumption.  How does a function’s performance scale as the input size grows to infinity?  To meaningfully compare algorithmic performance, we compare the asymptotic behavior of algorithms.  Big-O usually describes the upper bound on the growth rate of the function.
+> Big-O notation is a way of expressing a function's space and time consumption.  
+How does a function’s performance scale as the input size grows to infinity.  
+To meaningfully compare algorithmic performance, we compare the asymptotic behavior of algorithms.  
+Big-O usually describes the upper bound on the growth rate of the function.  
 
 2. What are Divide and Conquer algorithms? Describe how they work. Can you give any common examples of the types of problems where this approach might be used?
 Your Answer:
 > A divide and conquer algorithm is a recursion algorithm.  
-They work by defining a function or calculating a number by repeating the application of an algorithm, until it is simple enough to be solved directly. 
-The solutions to the sub-problems are then combined to give a solution to the original problem.  For example, 
+They work by defining a function or calculating a number by repeating the application of an algorithm, until it is simple enough to be solved directly.  
+The solutions to the sub-problems are then combined to give a solution to the original problem.   
 
 3. What is a Hash Table, and what is the average case and worst case time for each of its operations? How can we use this structure to find all anagrams in a dictionary?
 Your Answer: 
->A hash table is an array data structure that can map keys to values.
-The key is hashed and the resulting value is used as the index at which to store the value within the array.
-Note that it is best to use prime numbers for the array size because it helps to avoid collisions.
-The average cost for each lookup is independent of the number of elements stored in the table because it calculates the index instead of searching for the value.
-Therefore, the average and worst case for space is O(n).  Average search, insert and delete is O(1), and O(n) for worst case search, insert and delete.
-Since the hash algorithm would produce the same result for anagram words, like stressed == desserts, hashing words would result in the same index, so an anagram is found.
+>A hash table is an array data structure that can map keys to values.  
+The key is hashed and the resulting value is used as the index at which to store the value within the array.  
+Note that it is best to use prime numbers for the array size because it helps to avoid collisions.  
+The average cost for each lookup is independent of the number of elements stored in the table because it calculates the index instead of searching for the value.  
+Therefore, the average and worst case for space is O(n).  Average search, insert and delete is O(1), and O(n) for worst case search, insert and delete.  
+Since the hash algorithm would produce the same result for anagram words, like stressed == desserts, hashing words would result in the same index, so an anagram is found.  
 
 4. Why would you use a Binary Search for a linked lists?
 Your Answer:
-> You would use a Binary Search for a linked lists if it is a sorted linked list, otherwise what would be point applying a Divide and Conquer Algorithm to an unsorted list?  Because linked list is dynamic and not contiguous, finding the middle element is difficult.  You could use a Skip List Algorithm, which would reduce the time complexity from O(n) to O(sqroot(n)).  A Skip List Algorithm allows you to speed ahead to  a section of the linked list where the node you’re searching for is likely to be.
+> You would use a Binary Search for a linked lists if it is a sorted linked list, otherwise what would be point applying a Divide and Conquer Algorithm to an unsorted list?  
+Because linked list is dynamic and not contiguous, finding the middle element is difficult.  
+You could use a Skip List Algorithm, which would reduce the time complexity from O(n) to O(sqroot(n)).  
+A Skip List Algorithm allows you to speed ahead to  a section of the linked list where the node you’re searching for is likely to be.  
 
 5. Given a large string of characters, what is the most efficient way to identify the first unique character in the string?
 Your Answer:
@@ -70,25 +76,24 @@ One of the most important aspects of an algorithm is how fast it is, as represen
  
 9. What is the relationship between Dijkstra's algorithm and graph data structures.
 Your Answer:
-> Dijkstra's algorithm is for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.
-This youtube video explains it well.  https://www.youtube.com/watch?v=bum_19loj9A&list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H
+> Dijkstra's algorithm is for finding the shortest paths between nodes in a graph, which may represent, for example, road networks.  
 
 
 10. Read some of the following.  What did you find interesting?
 http://delivery.acm.org/10.1145/1290000/1283927/a1972-dijkstra.pdf?ip=68.0.213.32&id=1283927&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1530763760_2fe16c6dd019b5fc00fe92f4fc664579
 Your answer:
-> An error occurred while processing your request.
+> An error occurred while processing your request.  
 Reference #50.cd58db17.1531096753.1db6f6cb  
 The link does not work
 
 11. Watch some of the following. 
 Who was the person speaking at the start of the video?  Elaborate.
 Your answer:
-> Eric Schmidt vp of the general Systems Group of Sun Microsystems introduced Dr. Edsger W. Dijkstra - Reasoning about programs
-The general structure of correctness and separation of concerns between total correctness and partial correctness and termination.
-Total correctness means the program will produce the right result.
-Partial correctness will produce the right result if its execution terminates.
-To explain, he presented the general pattern that will prove things about the repetitive construct do B until the negation of the post condition P.
+> Eric Schmidt vp of the general Systems Group of Sun Microsystems introduced Dr. Edsger W. Dijkstra - Reasoning about programs  
+The general structure of correctness and separation of concerns between total correctness and partial correctness and termination.  
+Total correctness means the program will produce the right result.  
+Partial correctness will produce the right result if its execution terminates.  
+To explain, he presented the general pattern that will prove things about the repetitive construct do B until the negation of the post condition P.  
 
 What did you find interesting about the lecture?
 https://www.youtube.com/watch?v=GX3URhx6i2E
@@ -96,11 +101,12 @@ Your answer:
 
 
 12. List two resources for learning about/exploring algorithms (url) ?
-> A. https://brilliant.org/courses/computer-science-algorithms/  
-B. https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+> A. https://brilliant.org/courses/computer-science-algorithms  
+B. https://www.geeksforgeeks.org/fundamentals-of-algorithms  
 
 13. List a url to an algorithm repository along with a snippet of code. 
->A (url1).https://github.com/TheAlgorithms/Java/blob/master/Misc/PalindromicPrime.java
+A (url1).  
+> https://github.com/TheAlgorithms/Java/blob/master/Misc/PalindromicPrime.java
 
 B. Code snippet:
 >   public static boolean prime(int num) { // checking if number is prime or not
@@ -136,8 +142,8 @@ B. Code snippet:
         }
 
 C. Describe the algorithmic context of the code snippet pasted above    
-> This algorithm is used for mathematical operation which involves very big integer calculations that are outside the limit of all available primitive data types.
-    The for loop multiplies the argument iteratively from 2 to N then returns the factorial of that big Integer
+> This algorithm is used for mathematical operation which involves very big integer calculations that are outside the limit of all available primitive data types.  
+The for loop multiplies the argument iteratively from 2 to N then returns the factorial of that big Integer.  
 
 
 # Design Patterns
@@ -145,33 +151,33 @@ C. Describe the algorithmic context of the code snippet pasted above
 1. What is a design pattern? Be descriptive (6 [six] or more sentences).
 Your answer:
 > In software engineering, a design pattern is a general, reusable solution to a commonly occurring problem in software design.  
-It is a description or a template for how to solve a problem that can be used in many different situations.
-Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.
-Design patterns may be viewed as a structured approach to computer programming.
-They are somewhere between a programming paradigm and an algorithm.
+It is a description or a template for how to solve a problem that can be used in many different situations.  
+Object-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved.  
+Design patterns may be viewed as a structured approach to computer programming.  
+They are somewhere between a programming paradigm and an algorithm.  
 
 2. What is the purpose of  design pattern? Be descriptive (4 or more sentences).
 Your answer:    
 > Design patterns can speed up the development process by providing tested, proven development paradigms.  
-Freshly written code can have hidden subtle issues that take time to be detected.
+Freshly written code can have hidden subtle issues that take time to be detected.  
 Reusing design patterns can help to prevent such subtle issues.
-It also improves code readability for coders and architects who are familiar with the patterns.
+It also improves code readability for coders and architects who are familiar with the patterns.  
 
 
 3. How does design pattern mastery make one a better computer scientist and software engineer?  Be descriptive (4 or more sentences).
 Your answer:  
 > Design patterns make it easier to reuse successful designs and architectures.  
 Expressing proven techniques as design patterns makes them more accessible to developers of new systems.  
-Design patterns help you choose design alternatives that make a system reusable and avoid alternatives that compromise reusability.
+Design patterns help you choose design alternatives that make a system reusable and avoid alternatives that compromise reusability.  
 
 
 4. How do design patterns relate to OOP?
 Your answer:  
 > Design patterns help you identify less-obvious abstractions and the objects that can capture them.  
-Objects that represent a process or algorithm don't occur in nature, yet they are a crucial part of flexible design.
+Objects that represent a process or algorithm don't occur in nature, yet they are a crucial part of flexible design.  
 The Strategy pattern describes how to implement interchangable families of algorithms.  
 The State pattern represents each state of an entitiy as an object.  
-These objects are seldom found during analysis or even in the early stages of design; they are discovered later in the course of making a design more flexible and reusable.
+These objects are seldom found during analysis or even in the early stages of design; they are discovered later in the course of making a design more flexible and reusable.  
 
 5. Describe the MVC design pattern and include a use case.  Be descriptive (4 or more sentences).
 Your answer:  
@@ -183,18 +189,20 @@ Controller defines the way the user interface reacts to user input.
 
 6. Name and describe another design pattern and include a use case.  Be descriptive (4 or more sentences).
 Your answer:
-> Factory Method pattern defines an interface for creating an object, but lets the subclasses decide which class to instantiate.
+> Factory Method pattern defines an interface for creating an object, but lets the subclasses decide which class to instantiate.  
 
 7. Name and describe another design pattern and include a use case.  Be descriptive (4 or more sentences).
 Your answer:  
 > Observer pattern defins a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.  
 Think ajax in JavaScript.
 
-Object Oriented Programming
+
+# Object Oriented Programming
 
 1. What is a Object Oriented Programming? Be descriptive (6 [six] or more sentences).
 Your answer:
-> Object Oriented Programming is a way of thinking about problem solving and a method of software organization and construction. OOP is preoccupied with the manipulation of software objects.
+> Object Oriented Programming is a way of thinking about problem solving and a method of software organization and construction.  
+OOP is preoccupied with the manipulation of software objects.  
 
 2. What are the goals of OOP?
 > Data Abstraction, Encapsulation, Inheritance and Polymorphism 
@@ -202,16 +210,16 @@ Your answer:
 
 3. Define Encapsulation
 Your answer:  
-> Encapsulation hides data and functions that manipulate the data from outside interference and misuse.
+> Encapsulation hides data and functions that manipulate the data from outside interference and misuse.  
 
 Paste a commented code snippet example below: 
 
 4. Define Abstraction 
 Your answer:  
 > Abstraction associates an underlying data type with a set of operations that may be performed on the data type.  
-Abstraction allows you to show only "relevant" data and "hide" unnecessary details of an object from the user and from other classes.
+Abstraction allows you to show only "relevant" data and "hide" unnecessary details of an object from the user and from other classes.  
 Data abstraction separates the operations that may be performed on the underlying data, and the internal representation of the data.  
-If the internal representation of the data gets changed, the software that uses the data remains unaffected.
+If the internal representation of the data gets changed, the software that uses the data remains unaffected.  
 
 Paste a commented code snippet example below: 
 
@@ -223,7 +231,7 @@ Paste a commented code snippet example below:
 
 6. Define Polymorphism
 Your answer:  
-Polymorphism is the provision of a single interface, that can be applied to arguments of different types, and that behave differently depending on the type to which they are applied.
+Polymorphism is the provision of a single interface, that can be applied to arguments of different types, and that behave differently depending on the type to which they are applied.  
 
 Paste a commented code snippet example below: 
 
@@ -232,15 +240,15 @@ Paste a commented code snippet example below:
 8. What is the Diamond Problem as it relates to:
 A. C#
 B. Java
-> A class cannot inherit from two parents because if there was a method or fields with the same name, the compiler would not know which one to use.
+> A class cannot inherit from two parents because if there was a method or fields with the same name, the compiler would not know which one to use.  
 
 9. What is the difference between polymorphism and inheritance?
 Your answer:  
-> Inheritance creates a copy of a class, polymorphism causes the class to behave differently depending on the type of object that was instantiated.
+> Inheritance creates a copy of a class, polymorphism causes the class to behave differently depending on the type of object that was instantiated.  
 
 10. What is Association?
 Your answer:  
-Association defines a relationship between classes of objects that allows one object instance to cause another to perform an actin on its behalf.
+Association defines a relationship between classes of objects that allows one object instance to cause another to perform an actin on its behalf.  
 
 11. What is Aggregation?
 Your answer:   
@@ -248,63 +256,107 @@ Your answer:
 
 12. What is Composition?
 Your answer:  
-> Composition is a way to combine simple objects or data types into more complex structures.
+> Composition is a way to combine simple objects or data types into more complex structures.  
 
 
 13. What are constructors and what are destructors?
 Your answer:  
-> Constructors prepare a new object for use, often accepting arguments to set member variables.
+> Constructors prepare a new object for use, often accepting arguments to set member variables.  
 
 14. What are constructors and what are destructors?
 Your answer:
 15. What are access modifiers?  
 > Access modifiers determine whether other classes can use a particular field or invoke a particular method.  
-There are public, private, protected and package-private(no explicit modifier) that allow access to the class, subclass, package or world.
- 
+There are public, private, protected and package-private (no explicit modifier) that allow access to the class, subclass, package or world.
 
-.Net Questions
-
-1. What are the different types of classes in C#?
-2. Explain Code compilation in C#
-3. What are the differences between a Class and a Struct?
-4. What is the difference between Virtual method and Abstract method?
-5. How is Exception Handling implemented in C#?
-6. What are C# I/O Classes? What are the commonly used I/O Classes?
-7. What are Boxing and Unboxing?
-8. What is a String? What are the properties of a String Class?
-9. Give an example of using a sealed class in C#?
-10. What is the difference between “finalize” and “finally” methods in C#?
-11. Why and when should you use each of them?
-12. Describe compilation in C#?
-13. What is the difference between an abstract class and an interface?
-
-14. What is a delegate in .NET?
- 
 
 # Java Questions
 
 1. Explain public static void main(String args[]).
 > public is an access specifier
-static is access modifier
-void is return type that does not return any value
+static is an access modifier
+void is a return type that does not return any value
 main is the method name
 
 2. Explain public static void main(String args[]).
+> public is an access specifier
+static is an access modifier
+void is a return type that does not return any value
+main is the method name  
+
 3. Why java is not 100% Object-oriented?
+> Java is not 100% Object-oriented because it supports Primitive data types such as int, byte, char, long, double, etc, which are not objects.  Compare to Smalltalk, which is 100% OOP, there are no primitive types.  
+
 4. What are wrapper classes?
+> Wrapper classes are used for converting primitive data types into objects, like int to Integer, double to Double, and long to Long, etc.  
+
 5. What is singleton class and how can we make a class singleton?
+> A singleton class can only have one instance at a time.  
+If you try to instantiate a second singleton class, the new variable also points to the first instance.  
+To make a class singleton:  
+1. Make the constructor private access modifier.  
+2. Make a static method return type object of this singleton class.   
+
 6. What is the difference between equals() and == ?
+> equals() is a method of the String class that is used to compare tow strings and determine if they are equal.  
+The == operator compares two object references and determines if they refer to the same instance.  
+
 7. What are the differences between Heap and Stack Memory?
+> Local variables and function calls are stored in stack memory (not to be confused with a stack data structure).  
+Object are stored in heap memory.  
+Variables stored in stack are only visible to the owner thread,  
+while objects created in the heap are visible to all threads.  
+In other words, stack memory is kind of private memory of Java threads,  
+while heap memory is shared among all threads.  
+
 8. What is runtime polymorphism or dynamic method dispatch?  Create an example with comments. 
+> Runtime polymorphism is implemented by java when an overridden method is called.  
+Dynamic method dispatch resolves a call to an overridden method at runtime.  
+The type of the object determines which version of a method to execute.    
+
 9. What is method overloading and method overriding?
+> Method overloading occurs when tow or more methods on one class have the same method name but different parameters.  
+Method overriding is a type of polymorphism when a method of a super class is implemented in a child class and the behavior is dependent on the objects type at runtime.
+ 
 10. What is multiple inheritance? Is it supported by Java? (dejavu?)
+> Multiple inheritance in OOP is where a class can inherit properties of more than one parent class.  
+Java does not support multiple inheritance because the compiler cannot determine which class method to be called when there exists methods with the same signature in both of the parent classes and child class.
+
 11. What is a servlet?
+> Servlet is a Java technology to create dynamic web pages.  
+
 12. List five features of Java?
+> Simple, Object-oriented, distributed, secure, portable 
+
 13. List some Java keywords(unlike C,C#, C++ keywords)?
+> These are Java keywords that are not also c, C# or C++ keywords:  
+assert boolean extends final implements import instanceof native package strictfp** super synchronized throws transient 
+
 14. When would you use the parseInt() method ?
+> parseInt() convert a String representation of a number to an integer data type  
+
 15. Which package is used for pattern matching with regular expressions?
+>  The Java Matcher class (java.util.regex.Matcher) is used to search through text for regular expression (regex).  
+
 16. Describe the super keyword?
+> super keyword in java is a reference variable used to refer to parent class objects.   
+
 17. Does Java support multiple inheritance. Why or Why not?
 > No, Java does not support multiple inheritance because if a class had two parents and each had a method with the same name, the compiler would not know which one to use.
 
 18. Name AND DEFINE each of the methods of Object Class
+> java.lang.Object is the ultimate superclass of all objects.  
+Every class in Java is directly or indirectly derived from the Object class.  
+public Object()  
+getClass() : Returns the class object of “this” object and used to get actual runtime class of the object. It can also be used to get metadata of this class.    
+hashCode() : For every object, JVM generates a unique number which is hashcode. It returns distinct integers for distinct objects.   
+equals(Object obj) : Compares the given object to “this” object (the object on which the method is called). It gives a generic way to compare objects for equality.    
+protected Object clone() throws CloneNotSupportedException : It returns a new object that is exactly the same as this object.  
+toString() : toString() provides String representation of an Object and used to convert an object to String.   
+public final void notify()  
+public final void notifyAll()  
+public final void wait(long timeout) throws InterruptedException  
+public final void wait(long timeout, int nanoseconds) throws   InterruptedException  
+public final void wait() throws InterruptedException  
+protected void finalize() throws Throwable : This method is called just before an object is garbage collected. It is called by the Garbage Collector on an object when garbage collector determines that there are no more references to the object.
+
