@@ -80,7 +80,7 @@ Your Answer:
 
 
 10. Read some of the following.  What did you find interesting?
-http://delivery.acm.org/10.1145/1290000/1283927/a1972-dijkstra.pdf?ip=68.0.213.32&id=1283927&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1530763760_2fe16c6dd019b5fc00fe92f4fc664579
+http://delivery.acm.org/10.1145/1290000/1283927/a1972-dijkstra.pdf?ip=68.0.213.32&id=1283927&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1530763760_2fe16c6dd019b5fc00fe92f4fc664579  
 Your answer:
 > An error occurred while processing your request.  
 Reference #50.cd58db17.1531096753.1db6f6cb  
@@ -95,9 +95,10 @@ Total correctness means the program will produce the right result.
 Partial correctness will produce the right result if its execution terminates.  
 To explain, he presented the general pattern that will prove things about the repetitive construct do B until the negation of the post condition P.  
 
-What did you find interesting about the lecture?
-https://www.youtube.com/watch?v=GX3URhx6i2E
-Your answer:
+What did you find interesting about the lecture?  
+https://www.youtube.com/watch?v=GX3URhx6i2E  
+Your answer:  
+> He continues to refine his Total Correctness algorithm after making observations and asking questions.
 
 
 12. List two resources for learning about/exploring algorithms (url) ?
@@ -185,6 +186,52 @@ Your answer:
 Model is the application object.  
 View is the screen presentation.  
 Controller defines the way the user interface reacts to user input.
+
+> Use case:  
+
+    // model
+    class Student {
+    	// private fields, setters, getters, constructor
+    }
+    
+    // view
+    class StudentView {
+    	// print statements
+    }
+
+    // controller
+    class StudentController {
+    	private Student model;
+    	private StudentView view;
+    
+    	// constructor and getters and setters
+    
+    	Public void setStudentName(String name) {
+    		model.setName(name) {
+    	}
+    
+    	Public void updateView() {
+    		// implement method
+    	}
+    
+    }
+
+    // main
+    class MVCPattern {
+    	public static void main(String [] args) {
+    		
+    		// instantiate a view object and controller object
+    		StudentView view = new StudentView();
+    		StudentController controller = new StudentController(model, view);
+    
+    		// initialize object properties
+    		// call methods on the controller object
+    		controller.setStudentName("Ed");
+    
+               // display the model's data to the user
+    	     controller.updateView();
+    	}
+    }
 
 
 6. Name and describe another design pattern and include a use case.  Be descriptive (4 or more sentences).
